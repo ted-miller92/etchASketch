@@ -80,3 +80,10 @@ rgb.addEventListener("click", () => {
     clearGrid();
     createGrid(gridWidth, size, true);
 })
+
+const resize = document.getElementById("resize");
+resize.addEventListener("click", () => {
+    let size = prompt("Enter size of grid");
+    clearGrid();
+    createGrid(gridWidth, size, false);
+})
